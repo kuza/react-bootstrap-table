@@ -75,7 +75,7 @@ class InsertModalBody extends Component {
               (<span className='help-block bg-danger'>{ validateState[field] }</span>) :
               null;
             return (
-              <div className='form-group' key={ field }>
+              <div className='form-group' key={ field } ref={ field }>
                 <label>{ name }</label>
                 { fieldElement }
                 { error }
